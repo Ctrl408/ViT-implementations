@@ -9,6 +9,7 @@ This repository contains an implementation of Vision Transformers (ViT) with a t
 
 - **Vision Transformer (ViT) Implementation**: Based on the original ViT architecture.
 - **Bipartite Soft Merging**:merge tokens effectively, reducing computational load.
+
 ## Bipartite Soft Matching Algorithm
 
 1. Partition the token set \( T = \{ t_1, t_2, \dots, t_n \} \) into two disjoint subsets \( A = \{ a_1, a_2, \dots, a_k \} \) and \( B = \{ b_1, b_2, \dots, b_k \} \), where \( k \approx \frac{n}{2} \).
@@ -20,7 +21,7 @@ This repository contains an implementation of Vision Transformers (ViT) with a t
 4. Merge tokens by averaging their feature vectors: for each selected pair \( (a_i, b_j) \), compute the merged token \( m_{ij} = \frac{a_i + b_j}{2} \), and replace the pair with \( m_{ij} \).
 
 5. Concatenate the merged tokens back into the final set: \( T' = \{ m_{ij}, \dots \} \), where \( T' \) is the set of merged tokens.
-.
+
 
 
 
